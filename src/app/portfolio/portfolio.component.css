@@ -1,0 +1,43 @@
+section {
+  background-color: white;
+  height: 100%;
+}
+h1 {
+  color: var(--second-color);
+}
+.star i {
+  color: var(--second-color) !important;
+}
+.star .line {
+  background-color: var(--second-color);
+}
+.image {
+  cursor: pointer;
+}
+.layer {
+  background-color: rgba(26, 188, 156, 0.9);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.image:hover .layer {
+  opacity: 100%;
+}
+.image-layer {
+  background-color: rgba(29, 73, 117, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .image-body img {
+    width: 100% !important;
+  }
+}
+@media (max-width: 991px) {
+  .image-body img {
+    width: 100% !important;
+  }
+}

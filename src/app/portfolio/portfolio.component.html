@@ -1,0 +1,79 @@
+<section class="py-5 mt-5">
+    <div class="container mt-5">
+        <div class="content text-center mb-4">
+            <h1 class="text-uppercase fw-bold">PORTFOLIO COMPONENT</h1>
+            <div class="star mt-4 d-flex justify-content-center align-items-center gap-3">
+                <div class="line rounded-2"></div>
+                <i class="fas fa-star"></i>
+                <div class="line rounded-2"></div>
+            </div>
+        </div>
+        <div class="row g-5 ">
+            <div class="col-lg-4 col-md-6">
+                <div class="image position-relative" (click)="getImgSrc(image1)">
+                    <img #image1 class="img-fluid rounded-3" src="./assets/images/poert1.png" alt="">
+                    <div
+                        class="layer position-absolute z-3 top-50 start-50 translate-middle d-flex justify-content-center align-items-center">
+                        <i class="fas fa-plus text-white text-center fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="image position-relative" (click)="getImgSrc(image2)">
+                    <img #image2 class="img-fluid rounded-3" src="./assets/images/port2.png" alt="">
+                    <div
+                        class="layer position-absolute z-3 top-50 start-50 translate-middle d-flex justify-content-center align-items-center">
+                        <i class="fas fa-plus text-white text-center fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="image position-relative" (click)="getImgSrc(image3)">
+                    <img #image3 class="img-fluid rounded-3" src="./assets/images/port3.png" alt="">
+                    <div
+                        class="layer position-absolute z-3 top-50 start-50 translate-middle d-flex justify-content-center align-items-center">
+                        <i class="fas fa-plus text-white text-center fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="image position-relative" (click)="getImgSrc(image4)">
+                    <img #image4 class="img-fluid rounded-3" src="./assets/images/poert1.png" alt="">
+                    <div
+                        class="layer position-absolute z-3 top-50 start-50 translate-middle d-flex justify-content-center align-items-center">
+                        <i class="fas fa-plus text-white text-center fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="image position-relative" (click)="getImgSrc(image5)">
+                    <img #image5 class="img-fluid rounded-3" src="./assets/images/port2.png" alt="">
+                    <div
+                        class="layer position-absolute z-3 top-50 start-50 translate-middle d-flex justify-content-center align-items-center">
+                        <i class="fas fa-plus text-white text-center fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="image position-relative" (click)="getImgSrc(image6)">
+                    <img #image6 class="img-fluid rounded-3" src="./assets/images/port3.png" alt="">
+                    <div
+                        class="layer position-absolute z-3 top-50 start-50 translate-middle d-flex justify-content-center align-items-center">
+                        <i class="fas fa-plus text-white text-center fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <ng-template #imgBody> -->
+<section
+    class="image-layer position-fixed z-3 top-50 start-50 translate-middle d-flex justify-content-center align-items-center"
+    (click)="closeLayer()" *ngIf="showLayer">
+    <div class="container">
+        <div class="image-body w-100 z-3 d-flex justify-content-center align-items-center">
+            <img class="w-50" [src]="imageSrc" alt="">
+        </div>
+    </div>
+</section>
+<!-- </ng-template> -->

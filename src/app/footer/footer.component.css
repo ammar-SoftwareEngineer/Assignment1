@@ -1,0 +1,11 @@
+footer {
+  background-color: var(--second-color);
+}
+.icon {
+  width: 36px;
+  height: 36px;
+  border: 1px solid white;
+}
+.copy {
+  background-color: #1a252f;
+}

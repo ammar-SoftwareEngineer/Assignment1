@@ -1,0 +1,14 @@
+nav {
+  background-color: var(--second-color) !important;
+}
+nav a {
+  color: white;
+}
+nav .navbar-toggler {
+  box-shadow: none;
+  border: none;
+}
+.active {
+  background-color: var(--main-color);
+  transition: all 0.5s;
+}

@@ -1,0 +1,22 @@
+section {
+  background-color: white;
+  height: 100vh;
+}
+h1 {
+  color: var(--second-color);
+}
+.star i {
+  color: var(--second-color) !important;
+}
+.star .line {
+  background-color: var(--second-color);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btn-send button {
+  color: white;
+  background-color: var(--main-color);
+}

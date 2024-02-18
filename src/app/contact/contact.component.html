@@ -1,0 +1,39 @@
+<section class="py-5 mt-5">
+    <div class="container mt-5">
+        <div class="content text-center mb-4">
+            <h1 class="text-uppercase fw-bold">CONTCAT SECTION</h1>
+            <div class="star mt-4 d-flex justify-content-center align-items-center gap-3">
+                <div class="line rounded-2"></div>
+                <i class="fas fa-star"></i>
+                <div class="line rounded-2"></div>
+            </div>
+        </div>
+        <div class="formInputs w-75 mx-auto mt-5 postio">
+            <div class="mb-5 position-relative">
+                <label for="name" class="form-label" [@slideUpDown]="showLabel ? 'down' : 'up'">UserName</label>
+                <input type="text" class="form-control border-0 border-2 border-bottom" id="name" placeholder="userName"
+                    (focus)="showLabel=true" (keyup)="showLabel=true" (blur)="showLabel=false" />
+            </div>
+            <div class="mb-5">
+                <label for="age" class="form-label" [@slideUpDown]="showLabel ? 'down' : 'up'">UserAge</label>
+                <input type="number" class="form-control border-0 border-2 border-bottom" id="age" placeholder="userAge"
+                    (focus)="true" (keyup)="showLabel = true" (blur)="showLabel = false" />
+            </div>
+            <div class="mb-5">
+                <label for="email" class="form-label" [@slideUpDown]="showLabel ? 'down' : 'up'">UserEmail</label>
+                <input type="email" class="form-control border-0 border-2 border-bottom" id="email"
+                    placeholder="userEmail" (focus)="showLabel = true" (keyup)="showLabel = true"
+                    (blur)="showLabel = false" />
+            </div>
+            <div class="mb-4">
+                <label for="password" class="form-label" [@slideUpDown]="showLabel ? 'down' : 'up'">UserPassword</label>
+                <input type="password" class="form-control border-0 border-2 border-bottom" id="password"
+                    placeholder="userPassword" (focus)="showLabel = true" (keyup)="showLabel = true"
+                    (blur)="showLabel = false" />
+            </div>
+            <div class="btn-send">
+                <button class="btn btn-info rounded-2">Send Message</button>
+            </div>
+        </div>
+    </div>
+</section>
