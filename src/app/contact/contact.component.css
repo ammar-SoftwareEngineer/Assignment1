@@ -15,7 +15,9 @@ h1 {
 .form-control:focus {
   box-shadow: none;
 }
-
+label {
+  color: var(--main-color);
+}
 .btn-send button {
   color: white;
   background-color: var(--main-color);

@@ -33,12 +33,5 @@ import {
   ],
 })
 export class ContactComponent {
-  booleanArray: boolean[] = [true, false];
-  showLabel: any;
-  showLabelInputs() {
-    for (let i = 0; i < this.booleanArray.length; i++) {
-      this.showLabel = this.booleanArray[i];
-      console.log(this.showLabel);
-    }
-  }
+  showLabel: boolean = false;
 }

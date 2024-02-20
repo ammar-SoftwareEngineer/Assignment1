@@ -9,10 +9,11 @@
             </div>
         </div>
         <div class="formInputs w-75 mx-auto mt-5 postio">
-            <!-- <div class="mb-5 position-relative">
-                <label for="name" class="form-label" [@slideUpDown]="showLabel ? 'down' : 'up'">UserName</label>
-                <input type="text" class="form-control border-0 border-2 border-bottom" id="name" placeholder="userName"
-                    (focus)="showLabel=true" (keyup)="showLabel=true" (blur)="showLabel=false" />
+            <div class="mb-5 position-relative">
+                <label for="name" class="form-label" [@slideUpDown]="showLabel ?'down' : 'up'">UserName</label>
+                <input #true type="text" class="form-control border-0 border-2 border-bottom" id="name"
+                    placeholder="userName" (focus)="showLabel=true" (keyup)="showLabel = true"
+                    (blur)="showLabel = false" />
             </div>
             <div class="mb-5">
                 <label for="age" class="form-label" [@slideUpDown]="showLabel ? 'down' : 'up'">UserAge</label>
@@ -30,9 +31,9 @@
                 <input type="password" class="form-control border-0 border-2 border-bottom" id="password"
                     placeholder="userPassword" (focus)="showLabel = true" (keyup)="showLabel = true"
                     (blur)="showLabel = false" />
-            </div> -->
+            </div>
             <div class="btn-send">
-                <button class="btn btn-info rounded-2" (click)="showLabelInputs()">Send
+                <button class="btn btn-info rounded-2">Send
                     Message</button>
             </div>
         </div>
