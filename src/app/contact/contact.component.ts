@@ -34,6 +34,7 @@ import {
 })
 export class ContactComponent {
   showLabel: boolean = false;
+
   showLabelInputs() {
     this.showLabel = !this.showLabel;
   }
