@@ -34,11 +34,11 @@ import {
 })
 export class ContactComponent {
   booleanArray: boolean[] = [true, false];
-  showLabelInputs(showLabel: boolean) {
+  showLabel: any;
+  showLabelInputs() {
     for (let i = 0; i < this.booleanArray.length; i++) {
-      showLabel = this.booleanArray[i];
-      console.log(showLabel);
+      this.showLabel = this.booleanArray[i];
+      console.log(this.showLabel);
     }
-    // this.showLabel = !this.showLabel;
   }
 }
