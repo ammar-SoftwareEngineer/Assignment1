@@ -17,7 +17,7 @@
             <div class="mb-5">
                 <label for="age" class="form-label" [@slideUpDown]="showLabel ? 'down' : 'up'">UserAge</label>
                 <input type="number" class="form-control border-0 border-2 border-bottom" id="age" placeholder="userAge"
-                    (focus)="true" (keyup)="showLabel = true" (blur)="showLabel = false" />
+                    (focus)="showLabel=true" (keyup)="showLabel = true" (blur)="showLabel = false" />
             </div>
             <div class="mb-5">
                 <label for="email" class="form-label" [@slideUpDown]="showLabel ? 'down' : 'up'">UserEmail</label>
